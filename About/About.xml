@@ -6,7 +6,7 @@
   <supportedVersions>
     <li>1.1</li>
   </supportedVersions>
-  <description>Ever tried to form a caravan and have pawns running all across the map because you didn't realize some items weren't in storage? No more! With this mod you can remove things from caravans during loading, just like you can do with transport pods.
+  <description>For some reason caravan formation doesn't have the remove item functionality that pod/ship loading has. This mod fixes that.
 
 Known caveat: If there are multiples of the same object being loaded this mod will remove the first on the loadout list regardless of which one you actually clicked. I decided to do it this way because it required much less code modification.</description>
   <packageId>dhultgren.changecaravanloadout</packageId>
