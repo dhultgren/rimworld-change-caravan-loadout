@@ -87,12 +87,12 @@ namespace ChangeCaravanLoadout.Patches
             {
                 if (thing.stackCount == countToDrop)
                 {
-                    thing.holdingOwner.TryDrop_NewTmp(thing, pos, map, ThingPlaceMode.Near, out Thing _);
+                    thing.holdingOwner.TryDrop(thing, pos, map, ThingPlaceMode.Near, out Thing _);
                 }
                 else
                 {
                     var newThing = thing.SplitOff(countToDrop);
-                    GenDrop.TryDropSpawn_NewTmp(newThing, pos, map, ThingPlaceMode.Near, out Thing _);
+                    GenDrop.TryDropSpawn(newThing, pos, map, ThingPlaceMode.Near, out Thing _);
                 }
                 ShowDropMessage(thing.LabelNoCount, countToDrop);
             }
